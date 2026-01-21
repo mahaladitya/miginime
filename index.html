@@ -4,7 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download Anime & Info Anime</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Hitam */
+            color: #fff; /* Putih */
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #333; /* Abu-abu gelap */
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            color: #fff;
+        }
+        
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            color: #ccc; /* Abu-abu terang */
+        }
+        
+        section {
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+        
+        #hero {
+            background-color: #111; /* Hitam lebih gelap */
+            text-align: center;
+        }
+        
+        .anime-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .anime-item {
+            background-color: #222; /* Abu-abu gelap */
+            padding: 1rem;
+            border-radius: 5px;
+            flex: 1 1 300px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        input, textarea, button {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #555;
+        }
+        
+        button {
+            background-color: #555;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #777;
+        }
+        
+        footer {
+            background-color: #333;
+            text-align: center;
+            padding: 1rem;
+            color: #ccc;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -42,8 +126,8 @@
         <h2>Download Anime</h2>
         <p>Pilih anime untuk download (link placeholder—ganti dengan sumber legal):</p>
         <ul>
-            <li><a href="#" onclick="alert('Link download Naruto - Ganti dengan URL legal')">Naruto (Episode 1-720)</a></li>
-            <li><a href="#" onclick="alert('Link download One Piece - Ganti dengan URL legal')">One Piece (Episode 1-1000+)</a></li>
+            <li><a href="#" id="naruto-link">Naruto (Episode 1-720)</a></li>
+            <li><a href="#" id="onepiece-link">One Piece (Episode 1-1000+)</a></li>
             <!-- Tambahkan lebih banyak link -->
         </ul>
         <p><strong>Peringatan:</strong> Pastikan download dari sumber legal untuk menghindari pelanggaran hukum.</p>
@@ -51,7 +135,7 @@
     
     <section id="kontak">
         <h2>Kontak Kami</h2>
-        <form>
+        <form id="contact-form">
             <label for="nama">Nama:</label>
             <input type="text" id="nama" name="nama">
             <label for="email">Email:</label>
@@ -66,6 +150,23 @@
         <p>&copy; 2023 Website Anime. Dibuat dengan tema hitam-putih.</p>
     </footer>
     
-    <script src="script.js"></script>
+    <script>
+        // Alert untuk link download
+        document.getElementById('naruto-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Link download Naruto - Ganti dengan URL legal!');
+        });
+        
+        document.getElementById('onepiece-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Link download One Piece - Ganti dengan URL legal!');
+        });
+        
+        // Form kontak sederhana
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah dikirim (simulasi).');
+        });
+    </script>
 </body>
 </html>
