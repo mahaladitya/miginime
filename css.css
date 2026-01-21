@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Hitam */
+    color: #fff; /* Putih */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333; /* Abu-abu gelap */
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ccc; /* Abu-abu terang */
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+#hero {
+    background-color: #111; /* Hitam lebih gelap */
+    text-align: center;
+}
+
+.anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.anime-item {
+    background-color: #222; /* Abu-abu gelap */
+    padding: 1rem;
+    border-radius: 5px;
+    flex: 1 1 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea, button {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+button {
+    background-color: #555;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 1rem;
+    color: #ccc;
+}
